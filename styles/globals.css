@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-parchment text-ink font-body antialiased;
+}
+
+::selection {
+  background-color: #D6B460; /* brass-light */
+  color: #161311; /* ink */
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #A11E2B; /* barber */
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Scroll-reveal: toggled via IntersectionObserver in the Reveal component */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@layer components {
+  /* Rotating barber pole stripe -- the signature motif for this theme.
+     Classic red / white / blue barber-pole colours. */
+  .pole-strip {
+    background: repeating-linear-gradient(
+      45deg,
+      #a11e2b 0 12px,
+      #f6eede 12px 24px,
+      #1e3a5f 24px 36px,
+      #f6eede 36px 48px
+    );
+    background-size: 100% 68px;
+    animation: pole 1.4s linear infinite;
+  }
+
+  .barber-card {
+    @apply relative rounded-lg border-2 border-ink/10 bg-white shadow-card transition-all duration-300;
+  }
+
+  .barber-card:hover {
+    @apply -translate-y-1.5 border-barber/40 shadow-soft;
+  }
+
+  .section-tag {
+    @apply inline-flex items-center gap-2 text-xs tracking-[0.3em] uppercase text-barber font-bold;
+  }
+
+  .section-tag::before {
+    content: "";
+    @apply block h-px w-8 bg-brass;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-sm bg-barber px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-parchment shadow-soft transition-all duration-300 hover:bg-barber-dark hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-sm border-2 border-parchment/70 bg-transparent px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-parchment transition-all duration-300 hover:bg-parchment hover:text-ink hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-shine-sweep {
+    @apply pointer-events-none absolute inset-y-0 left-0 w-1/3 -translate-x-full skew-x-[-15deg] bg-white/25 transition-transform duration-700 ease-out group-hover:translate-x-[320%];
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
