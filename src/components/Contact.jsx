@@ -189,7 +189,7 @@ export default function Contact() {
                   className="h-full w-full border-0 grayscale"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps?q=Dastur+Meher+Road,+Camp,+Pune+411001&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d281.19304638829544!2d73.87728947792078!3d18.51680579822851!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c04f7e5a62d9%3A0xcec13b0524003808!2sPersian%20Salon!5e0!3m2!1sen!2sus!4v1785330952834!5m2!1sen!2sus"
                 />
               </div>
             </div>
