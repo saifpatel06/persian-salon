@@ -61,7 +61,7 @@ export default function Navbar() {
               Persian Salon
             </span>
             <span className="-mt-1 text-[10px] font-semibold uppercase tracking-[0.3em] text-brass">
-              Est. 2009 &middot; Camp, Pune
+              100+ Years &middot; Camp, Pune
             </span>
           </span>
         </a>

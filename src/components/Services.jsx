@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Scissors, Droplets, Gem, UserRound, Check } from "lucide-react";
+import { Scissors, Droplets, UserRound, Check } from "lucide-react";
 import Reveal from "./Reveal";
 import SnippingScissors from "./SnippingScissors";
 
@@ -10,46 +10,59 @@ const CATEGORIES = [
     icon: Scissors,
     color: "barber",
     blurb:
-      "Precision cuts and expert colour work tailored to your face and lifestyle.",
+      "Precision cuts, colour, and treatments tailored to your hair and lifestyle.",
     items: [
-      "Haircuts & Trims",
-      "Advanced Colouring — Highlights & Balayage",
-      "Hair Rebonding",
+      "Haircut",
+      "Kids Haircut",
+      "Hair Wash & Blow Dry",
+      "Hair Styling",
+      "Curling & Iron Styling",
+      "Hair Spa",
+      "Deep Conditioning Treatment",
+      "Scalp Treatment",
+      "Hair Oiling & Massage",
+      "Hair Repair Treatment",
+      "Split Ends Treatment",
+      "Anti-Frizz Treatment",
+      "Anti-Dandruff Hair Treatment",
+      "Hair Fall Control Treatment",
       "Hair Straightening",
-      "Professional Blow Dry",
-      "Nourishing Hair Treatments",
+      "Hair Smoothening",
+      "Hair Rebonding",
+      "Hair Perming",
+      "Nanoplastia Treatment",
+      "Keratin Treatment",
+      "Botox Hair Treatment",
+      "Hair Glossing",
+      "Hair Color (Global)",
+      "Hair Color (Root Touch-Up)",
+      "Highlights",
+      "Fashion Hair Colors",
+      "Hair Bleach",
     ],
   },
   {
     key: "skin",
-    label: "Skin & Spa",
+    label: "Face & Skin Care",
     icon: Droplets,
     color: "navy",
     blurb:
       "Restorative facials and skin treatments that leave you glowing, naturally.",
     items: [
-      "Herbal Facials",
-      "Brightening Facials",
-      "Anti-Aging Treatments",
-      "Deep Cleansing Skin Treatments",
-      "De-Tan Therapy",
-      "Relaxing Spa Rituals",
-    ],
-  },
-  {
-    key: "bridal",
-    label: "Bridal & Special Occasions",
-    icon: Gem,
-    color: "brass",
-    blurb:
-      "Flawless, camera-ready looks for your most important celebrations.",
-    items: [
-      "Professional Bridal Makeup",
-      "Bridal Hair Styling",
-      "Engagement & Reception Looks",
-      "Party Makeup & Draping",
-      "Pre-Bridal Skin Prep",
-      "Trial Sessions Available",
+      "Clean-Up",
+      "Face Massage",
+      "Face Scrub",
+      "Basic Facial",
+      "Gold Facial",
+      "Diamond Facial",
+      "Hydra Facial",
+      "Brightening Facial",
+      "De-Tan Facial",
+      "De-Tan Treatment",
+      "Face Bleach",
+      "Hand Bleach",
+      "Threading",
+      "Face Waxing",
     ],
   },
   {
@@ -59,12 +72,11 @@ const CATEGORIES = [
     color: "ink",
     blurb: "Sharp, classic grooming with meticulous attention to detail.",
     items: [
-      "Expert Beard Styling",
-      "Classic & Modern Shaving",
-      "Precision Trimming",
-      "Men's Haircuts",
-      "Facial for Men",
-      "Head Massage",
+      "Beard Trim",
+      "Beard Styling",
+      "Beard Color",
+      "Shaving",
+      "Head Shave",
     ],
   },
 ];
@@ -107,8 +119,8 @@ export default function Services() {
               SERVICES CRAFTED AROUND YOU
             </h2>
             <p className="mt-4 text-parchment/70">
-              From everyday grooming to once-in-a-lifetime celebrations,
-              explore our full range of hair, skin, bridal, and men&rsquo;s
+              From everyday grooming to complete transformations, explore
+              our full range of hair, face, and men&rsquo;s grooming
               services.
             </p>
           </div>

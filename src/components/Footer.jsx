@@ -39,8 +39,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm text-parchment/60">
-              Camp, Pune&rsquo;s trusted destination for hair, skin, bridal,
-              and grooming — crafting fresh looks since 2009.
+              Camp, Pune&rsquo;s four-generation family salon — specialising
+              in men&rsquo;s hair care and facials for more than 100 years.
             </p>
           </div>
 

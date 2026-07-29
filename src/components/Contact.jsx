@@ -3,13 +3,57 @@ import { MapPin, Clock, Phone, MessageCircle, Send } from "lucide-react";
 import Reveal from "./Reveal";
 
 const SERVICES = [
-  "Haircut & Styling",
-  "Hair Colouring / Balayage",
-  "Hair Rebonding & Straightening",
-  "Facial / Skin Treatment",
-  "Bridal Makeup & Styling",
-  "Men's Grooming",
-  "Other",
+  // Hair Services
+  "Haircut",
+  "Kids Haircut",
+  "Hair Wash & Blow Dry",
+  "Hair Styling",
+  "Hair Spa",
+  "Deep Conditioning Treatment",
+  "Scalp Treatment",
+  "Hair Oiling & Massage",
+  "Hair Straightening",
+  "Hair Perming",
+  "Hair Smoothening",
+  "Hair Rebonding",
+  "Keratin Treatment",
+  "Botox Hair Treatment",
+  "Hair Glossing",
+  "Hair Color (Global)",
+  "Hair Color (Root Touch-Up)",
+  "Highlights",
+  "Fashion Hair Colors",
+  "Hair Bleach",
+  "Head Shave",
+  "Curling & Iron Styling",
+  "Hair Repair Treatment",
+  "Split Ends Treatment",
+  "Nanoplastia Treatment",
+  "Anti-Frizz Treatment",
+  "Anti-Dandruff Hair Treatment",
+  "Hair Fall Control Treatment",
+
+  // Beard Services
+  "Beard Trim",
+  "Beard Styling",
+  "Shaving",
+  "Beard Color",
+
+  // Face Services
+  "Clean-Up",
+  "Face Massage",
+  "Face Scrub",
+  "Basic Facial",
+  "Gold Facial",
+  "Diamond Facial",
+  "Hydra Facial",
+  "Brightening Facial",
+  "De-Tan Facial",
+  "Face Bleach",
+  "Hand Bleach",
+  "De-Tan Treatment",
+  "Threading",
+  "Face Waxing",
 ];
 
 const HOURS = [
@@ -17,9 +61,9 @@ const HOURS = [
   { day: "Tuesday – Sunday", time: "9:00 AM – 9:30 PM" },
 ];
 
-const PHONE_NUMBER = "+91 00000 00000";
-const PHONE_HREF = "tel:+910000000000";
-const WHATSAPP_HREF = "https://wa.me/910000000000";
+const PHONE_NUMBER = "+91 9923191786";
+const PHONE_HREF = "tel:+919923191786";
+const WHATSAPP_HREF = "https://wa.me/919923191786";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -37,9 +81,23 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true);
-    setForm({ name: "", phone: "", service: SERVICES[0], message: "" });
-    setTimeout(() => setSubmitted(false), 4000);
+
+    const message = `Hello,
+
+      I would like to book an appointment.
+
+      Name: ${form.name}
+      Phone: ${form.phone}
+      Service: ${form.service}
+      Message: ${form.message}
+
+      Please confirm my appointment.`;
+
+    const whatsappNumber = "919923191786"; // Owner's WhatsApp number
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
   };
 
   return (

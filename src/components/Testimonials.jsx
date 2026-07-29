@@ -3,11 +3,11 @@ import Reveal from "./Reveal";
 
 const REVIEWS = [
   {
-    name: "Ananya Deshpande",
-    tag: "Bridal Makeup",
+    name: "Aditya Deshpande",
+    tag: "Hydra Facial",
     color: "brass",
     quote:
-      "Absolutely stunning bridal look and the equipment felt spotless the entire time. The team made me feel calm and confident on my big day.",
+      "Such a relaxing, thorough facial and the equipment felt spotless the entire time. You can tell this place has been perfected over generations.",
   },
   {
     name: "Rohan Kulkarni",
@@ -17,15 +17,15 @@ const REVIEWS = [
       "Best beard styling in Camp, hands down. Professional staff, clean setup, and they actually listen to what you want.",
   },
   {
-    name: "Simran Kaur",
+    name: "Imran Sheikh",
     tag: "Hair Colour & Styling",
     color: "barber",
     quote:
-      "My balayage came out exactly as I imagined. Seventeen years of experience really shows in how precise and gentle they are.",
+      "My hair colour came out exactly as I imagined. A hundred years of family expertise really shows in how precise and gentle they are.",
   },
   {
     name: "Priya Nair",
-    tag: "Herbal Facial",
+    tag: "Brightening Facial",
     color: "navy",
     quote:
       "The whole place has such a luxurious, calming vibe. My skin has never felt this fresh after a facial.",

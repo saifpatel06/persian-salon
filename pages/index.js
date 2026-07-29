@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Persian Salon | Hair, Skin & Bridal Studio in Camp, Pune</title>
+        <title>Persian Salon | Men's Hair Care & Facials in Camp, Pune — 100+ Years</title>
         <meta
           name="description"
-          content="Persian Salon — Camp, Pune's trusted destination for hair styling, skin & spa treatments, bridal makeup, and men's grooming. Serving clients with excellence since 2009."
+          content="Persian Salon — Camp, Pune's four-generation family salon, specialising in men's hair care and facials for more than 100 years. Innovative cutting and colour techniques, globally sourced products, and a passionate, creative team."
         />
       </Head>
 

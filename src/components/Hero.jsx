@@ -6,11 +6,11 @@ import SnippingScissors from "./SnippingScissors";
 
 const TICKER_ITEMS = [
   "WALK-INS WELCOME",
-  "EST. 2009",
-  "CERTIFIED EXPERTS",
+  "100+ YEARS OF LEGACY",
+  "4TH GENERATION FAMILY BUSINESS",
   "CAMP, PUNE",
   "4.8★ RATED",
-  "HYGIENIC & CLEAN",
+  "MEN'S HAIR & FACIAL SPECIALISTS",
 ];
 
 export default function Hero() {
@@ -58,7 +58,7 @@ export default function Hero() {
             <SnippingScissors size={40} className="mx-auto mb-3 text-brass" />
             <span className="section-tag justify-center before:hidden">
               <span className="h-px w-8 bg-brass" />
-              Since 2009 &middot; Camp, Pune
+              100+ Years in Pune &middot; 4th Generation Family Business
             </span>
           </Reveal>
 
@@ -72,9 +72,10 @@ export default function Hero() {
 
           <Reveal delay={200}>
             <p className="mx-auto mt-6 max-w-xl text-base text-parchment/80 sm:text-lg">
-              Over 17 years of trusted excellence in Camp, Pune — certified
-              experts, immaculate hygiene, and a warm, welcoming chair for
-              every cut, colour, facial, and bridal look.
+              For over 100 years and four generations, our family has cared
+              for Camp&rsquo;s hair and skin — now specialising in men&rsquo;s
+              hair care and facials, with innovative cutting and colour
+              techniques and globally sourced products.
             </p>
           </Reveal>
 
