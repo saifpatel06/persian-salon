@@ -138,7 +138,7 @@ export default function Contact() {
                     OUR LOCATION
                   </h3>
                   <p className="mt-1 text-sm text-ink-soft">
-                    Near Garden Vada Pav, Dastur Meher Road, Camp, Pune –
+                    Near JJ Garden, Dastur Meher Road, Camp, Pune –
                     411001
                   </p>
                 </div>

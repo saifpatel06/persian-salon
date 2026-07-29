@@ -68,7 +68,7 @@ export default function Footer() {
               FOLLOW US
             </h4>
             <p className="mt-4 text-sm text-parchment/60">
-              Near Garden Vada Pav, Dastur Meher Road, Camp, Pune – 411001
+              Near JJ Garden, Dastur Meher Road, Camp, Pune – 411001
             </p>
             <div className="mt-4 flex items-center gap-3">
               <a

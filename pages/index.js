@@ -18,18 +18,49 @@ export default function Home() {
 
         <meta
           name="description"
-          content="Persian Salon in Camp, Pune offers men's haircuts, beard styling, hair spa, keratin treatments, hair coloring, facials, and premium grooming with over 100 years of trusted experience."
+          content="Persian Salon in Camp, Pune offers men's haircuts, beard styling, hair spa, keratin treatments, hair coloring, facials, threading, and premium grooming services backed by over 100 years of trusted experience."
         />
 
-        {/* Open Graph */}
+        <meta
+          name="keywords"
+          content="Persian Salon Pune, Men's Salon Pune, Haircut Pune, Beard Styling Pune, Hair Spa Pune, Keratin Treatment Pune, Hair Color Pune, Facial Pune, Camp Pune Salon, Barber Shop Pune"
+        />
+
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {/* Open Graph (Facebook, WhatsApp, LinkedIn) */}
         <meta
           property="og:title"
           content="Persian Salon | Men's Hair Care & Facials in Camp, Pune — 100+ Years"
         />
         <meta
           property="og:description"
-          content="Persian Salon in Camp, Pune offers men's haircuts, beard styling, hair spa, keratin treatments, hair coloring, facials, and premium grooming with over 100 years of trusted experience."
+          content="Persian Salon in Camp, Pune offers men's haircuts, beard styling, hair spa, keratin treatments, hair coloring, facials, threading, and premium grooming services backed by over 100 years of trusted experience."
         />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://persian-salon.vercel.app/" />
+        <meta
+          property="og:image"
+          content="https://persian-salon.vercel.app/og-image.jpg"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://persian-salon.vercel.app/og-image.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Persian Salon" />
+        <meta property="og:locale" content="en_IN" />
+
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://persian-salon.vercel.app/"
+        />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
