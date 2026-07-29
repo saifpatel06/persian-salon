@@ -12,10 +12,23 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Persian Salon | Men's Hair Care & Facials in Camp, Pune — 100+ Years</title>
+        <title>
+          Persian Salon | Men's Hair Care & Facials in Camp, Pune — 100+ Years
+        </title>
+
         <meta
           name="description"
-          content="Persian Salon — Camp, Pune's four-generation family salon, specialising in men's hair care and facials for more than 100 years. Innovative cutting and colour techniques, globally sourced products, and a passionate, creative team."
+          content="Persian Salon in Camp, Pune offers men's haircuts, beard styling, hair spa, keratin treatments, hair coloring, facials, and premium grooming with over 100 years of trusted experience."
+        />
+
+        {/* Open Graph */}
+        <meta
+          property="og:title"
+          content="Persian Salon | Men's Hair Care & Facials in Camp, Pune — 100+ Years"
+        />
+        <meta
+          property="og:description"
+          content="Persian Salon in Camp, Pune offers men's haircuts, beard styling, hair spa, keratin treatments, hair coloring, facials, and premium grooming with over 100 years of trusted experience."
         />
       </Head>
 
