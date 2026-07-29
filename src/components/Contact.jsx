@@ -61,9 +61,9 @@ const HOURS = [
   { day: "Tuesday – Sunday", time: "9:00 AM – 9:30 PM" },
 ];
 
-const PHONE_NUMBER = "+91 9923191786";
-const PHONE_HREF = "tel:+919923191786";
-const WHATSAPP_HREF = "https://wa.me/919923191786";
+const PHONE_NUMBER = "+91 9371234444";
+const PHONE_HREF = "tel:+919371234444";
+const WHATSAPP_HREF = "https://wa.me/919371234444";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -93,11 +93,18 @@ export default function Contact() {
 
       Please confirm my appointment.`;
 
-    const whatsappNumber = "919923191786"; // Owner's WhatsApp number
+    const whatsappNumber = "919371234444"; // Owner's WhatsApp number
 
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
+
+    setForm({
+      name: "",
+      phone: "",
+      service: SERVICES[0], 
+      message: "",
+    });
   };
 
   return (

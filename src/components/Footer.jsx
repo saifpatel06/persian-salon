@@ -72,7 +72,7 @@ export default function Footer() {
             </p>
             <div className="mt-4 flex items-center gap-3">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/salonpersian?igsh=czcxem9hbWdnNnQ4"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Persian Salon on Instagram"
@@ -80,7 +80,7 @@ export default function Footer() {
               >
                 <Instagram size={17} />
               </a>
-              <a
+              {/* <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -88,7 +88,7 @@ export default function Footer() {
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-parchment/15 transition-colors hover:border-barber hover:text-barber-light"
               >
                 <Facebook size={17} />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
