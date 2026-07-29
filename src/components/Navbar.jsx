@@ -141,7 +141,7 @@ export default function Navbar() {
               Book Appointment
             </a>
             <a
-              href="tel:+910000000000"
+              href="tel:+919371234444"
               className="flex items-center justify-center gap-2 py-2 text-sm font-medium text-brass"
             >
               <Phone size={15} /> Call the salon
