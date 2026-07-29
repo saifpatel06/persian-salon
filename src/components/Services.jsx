@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Scissors, Droplets, UserRound, Check } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Scissors, Droplets, UserRound, Check, ChevronDown, ChevronUp } from "lucide-react";
 import Reveal from "./Reveal";
 import SnippingScissors from "./SnippingScissors";
 
@@ -102,9 +102,25 @@ const COLOR_CLASSES = {
   },
 };
 
+// How many services to show before offering a "Show all" toggle -- keeps
+// long categories (like Hair Care & Styling) from dominating the screen,
+// especially on mobile.
+const INITIAL_VISIBLE = 8;
+
 export default function Services() {
   const [active, setActive] = useState(CATEGORIES[0].key);
+  const [expanded, setExpanded] = useState(false);
   const activeCategory = CATEGORIES.find((c) => c.key === active);
+
+  // Collapse back down whenever the person switches tabs.
+  useEffect(() => {
+    setExpanded(false);
+  }, [active]);
+
+  const hasMore = activeCategory.items.length > INITIAL_VISIBLE;
+  const visibleItems = expanded
+    ? activeCategory.items
+    : activeCategory.items.slice(0, INITIAL_VISIBLE);
 
   return (
     <section id="services" className="bg-ink py-20 sm:py-28">
@@ -173,19 +189,38 @@ export default function Services() {
               </p>
             </div>
 
-            <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {activeCategory.items.map((item) => (
-                <li
-                  key={item}
-                  className="flex items-start gap-3 border border-parchment/10 bg-ink px-4 py-3.5 text-sm text-parchment/90"
+            <div>
+              <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {visibleItems.map((item) => (
+                  <li
+                    key={item}
+                    className="flex items-start gap-3 border border-parchment/10 bg-ink px-4 py-3.5 text-sm text-parchment/90"
+                  >
+                    <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brass text-ink">
+                      <Check size={12} strokeWidth={3} />
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              {hasMore && (
+                <button
+                  type="button"
+                  onClick={() => setExpanded((v) => !v)}
+                  className="mt-4 flex w-full items-center justify-center gap-2 border-2 border-parchment/15 py-3 text-sm font-bold uppercase tracking-wide text-brass transition-all duration-300 hover:border-brass hover:-translate-y-0.5"
                 >
-                  <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brass text-ink">
-                    <Check size={12} strokeWidth={3} />
-                  </span>
-                  {item}
-                </li>
-              ))}
-            </ul>
+                  {expanded
+                    ? "Show Less"
+                    : `Show All ${activeCategory.items.length} Services`}
+                  {expanded ? (
+                    <ChevronUp size={16} />
+                  ) : (
+                    <ChevronDown size={16} />
+                  )}
+                </button>
+              )}
+            </div>
           </div>
         </Reveal>
       </div>
