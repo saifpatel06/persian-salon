@@ -13,7 +13,7 @@ export default function WhatsAppFloat() {
       aria-label="Chat with Persian Salon on WhatsApp"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="group fixed bottom-5 left-5 z-50 flex animate-slideInLeft items-center sm:bottom-7 sm:left-7"
+      className="group fixed bottom-5 right-5 z-50 flex animate-slideInRRight items-center sm:bottom-7 sm:right-7"
     >
       <span className="absolute inset-0 -z-10 rounded-full bg-[#25D366]/40 animate-ping" />
 

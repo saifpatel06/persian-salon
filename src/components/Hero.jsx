@@ -40,13 +40,13 @@ export default function Hero() {
 
       <div className="relative flex min-h-[88vh] w-full items-center overflow-hidden pt-8">
         <Image
-          src="https://images.unsplash.com/photo-1503951458645-643d53bfd90f?q=80&w=1600&auto=format&fit=crop"
-          alt="Classic barbershop chair and mirror"
-          fill
-          priority
-          sizes="100vw"
-          className="animate-kenburns object-cover"
-        />
+  src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1600&auto=format&fit=crop"
+  alt="Classic barbershop interior"
+  fill
+  priority
+  sizes="100vw"
+  className="animate-kenburns object-cover object-top"
+/>
         <div className="absolute inset-0 bg-hero-overlay" />
         <FallingHair />
 

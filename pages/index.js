@@ -3,6 +3,7 @@ import Navbar from "@/src/components/Navbar";
 import Hero from "@/src/components/Hero";
 import About from "@/src/components/About";
 import Services from "@/src/components/Services";
+import Gallery from "@/src/components/Gallery";
 import Testimonials from "@/src/components/Testimonials";
 import Contact from "@/src/components/Contact";
 import Footer from "@/src/components/Footer";
@@ -69,6 +70,7 @@ export default function Home() {
       <div className="pole-strip h-1.5 w-full" />
       <About />
       <Services />
+      <Gallery />
       <div className="pole-strip h-1.5 w-full" />
       <Testimonials />
       <Contact />
