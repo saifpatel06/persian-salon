@@ -20,7 +20,7 @@ export default function About() {
               <div className="border border-brass p-1.5">
                 <div className="aspect-[4/5] w-full overflow-hidden">
                   <Image
-                    src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?q=80&w=1100&auto=format&fit=crop"
+                    src="https://images.unsplash.com/photo-1647140655214-e4a2d914971f?q=80&w=1100&auto=format&fit=crop"
                     alt="Certified barber at work in a clean, classic salon"
                     width={800}
                     height={1000}

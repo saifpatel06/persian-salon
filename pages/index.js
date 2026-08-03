@@ -70,7 +70,7 @@ export default function Home() {
       <div className="pole-strip h-1.5 w-full" />
       <About />
       <Services />
-      <Gallery />
+      {/* <Gallery /> */}
       <div className="pole-strip h-1.5 w-full" />
       <Testimonials />
       <Contact />
