@@ -8,6 +8,7 @@ import Testimonials from "@/src/components/Testimonials";
 import Contact from "@/src/components/Contact";
 import Footer from "@/src/components/Footer";
 import WhatsAppFloat from "@/src/components/WhatsAppFloat";
+import CallFloat from "@/src/components/CallFloat";
 
 export default function Home() {
   return (
@@ -76,6 +77,7 @@ export default function Home() {
       <Contact />
 
       <Footer />
+      <CallFloat />
       <WhatsAppFloat />
     </>
   );
