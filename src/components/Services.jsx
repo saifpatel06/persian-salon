@@ -98,7 +98,7 @@ const COLOR_CLASSES = {
   },
   ink: {
     badge: "bg-ink",
-    activeTab: "border-parchment bg-parchment text-ink shadow-soft",
+    activeTab: "border-ink bg-ink text-parchment shadow-soft",
   },
 };
 
@@ -123,7 +123,7 @@ export default function Services() {
     : activeCategory.items.slice(0, INITIAL_VISIBLE);
 
   return (
-    <section id="services" className="bg-ink py-20 sm:py-28">
+    <section id="services" className="bg-parchment py-20 sm:py-28">
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
@@ -131,10 +131,10 @@ export default function Services() {
               <span className="h-px w-8 bg-brass" />
               What We Offer
             </span>
-            <h2 className="mt-4 font-display text-4xl tracking-wide text-parchment sm:text-5xl">
+            <h2 className="mt-4 font-display text-4xl tracking-wide text-ink sm:text-5xl">
               SERVICES CRAFTED AROUND YOU
             </h2>
-            <p className="mt-4 text-parchment/70">
+            <p className="mt-4 text-ink-soft">
               From everyday grooming to complete transformations, explore
               our full range of hair, face, and men&rsquo;s grooming
               services.
@@ -155,7 +155,7 @@ export default function Services() {
                   className={`group flex items-center gap-2 rounded-sm border-2 px-5 py-2.5 text-sm font-bold uppercase tracking-wide transition-all duration-300 hover:-translate-y-0.5 ${
                     isActive
                       ? COLOR_CLASSES[cat.color].activeTab
-                      : "border-parchment/15 bg-transparent text-parchment/70 hover:border-brass hover:text-brass"
+                      : "border-ink/15 bg-white text-ink-soft hover:border-brass hover:text-brass"
                   }`}
                 >
                   <Icon size={16} className="transition-transform group-hover:animate-wiggle" />
@@ -169,7 +169,7 @@ export default function Services() {
         <Reveal delay={150}>
           <div
             key={active}
-            className="mt-12 grid animate-fadeUp grid-cols-1 gap-8 border-2 border-parchment/10 bg-ink-soft/20 p-6 sm:p-10 lg:grid-cols-[280px_1fr] lg:gap-12"
+            className="mt-12 grid animate-fadeUp grid-cols-1 gap-8 border-2 border-ink/10 bg-white p-6 shadow-card sm:p-10 lg:grid-cols-[280px_1fr] lg:gap-12"
           >
             <div>
               <span
@@ -181,10 +181,10 @@ export default function Services() {
                   <activeCategory.icon size={26} strokeWidth={1.75} />
                 )}
               </span>
-              <h3 className="mt-5 font-display text-3xl tracking-wide text-parchment">
+              <h3 className="mt-5 font-display text-3xl tracking-wide text-ink">
                 {activeCategory.label.toUpperCase()}
               </h3>
-              <p className="mt-3 text-sm text-parchment/70">
+              <p className="mt-3 text-sm text-ink-soft">
                 {activeCategory.blurb}
               </p>
             </div>
@@ -194,7 +194,7 @@ export default function Services() {
                 {visibleItems.map((item) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 border border-parchment/10 bg-ink px-4 py-3.5 text-sm text-parchment/90"
+                    className="flex items-start gap-3 border border-ink/10 bg-parchment px-4 py-3.5 text-sm text-ink"
                   >
                     <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brass text-ink">
                       <Check size={12} strokeWidth={3} />
@@ -208,7 +208,7 @@ export default function Services() {
                 <button
                   type="button"
                   onClick={() => setExpanded((v) => !v)}
-                  className="mt-4 flex w-full items-center justify-center gap-2 border-2 border-parchment/15 py-3 text-sm font-bold uppercase tracking-wide text-brass transition-all duration-300 hover:border-brass hover:-translate-y-0.5"
+                  className="mt-4 flex w-full items-center justify-center gap-2 border-2 border-ink/15 py-3 text-sm font-bold uppercase tracking-wide text-brass-dark transition-all duration-300 hover:border-brass hover:-translate-y-0.5"
                 >
                   {expanded
                     ? "Show Less"
