@@ -41,14 +41,14 @@ export default function Home() {
           content="Persian Salon in Camp, Pune offers men's haircuts, beard styling, hair spa, keratin treatments, hair coloring, facials, threading, and premium grooming services backed by over 100 years of trusted experience."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://persian-salon.vercel.app/" />
+        <meta property="og:url" content="https://persiansaloon.com/" />
         <meta
           property="og:image"
-          content="https://persian-salon.vercel.app/og-image.jpg"
+          content="https://persiansaloon.com/og-image.jpg"
         />
         <meta
           property="og:image:secure_url"
-          content="https://persian-salon.vercel.app/og-image.jpg"
+          content="https://persiansaloon.com/og-image.jpg"
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -58,7 +58,7 @@ export default function Home() {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://persian-salon.vercel.app/"
+          href="https://persiansaloon.com/"
         />
 
         {/* Favicon */}
