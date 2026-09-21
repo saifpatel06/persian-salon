@@ -63,6 +63,30 @@ export default function Home() {
 
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BeautySalon",
+              name: "Persian Salon",
+              url: "https://persiansaloon.com/",
+              description:
+                "Persian Salon in Camp, Pune offers men's haircuts, beard styling, hair spa, keratin treatments, hair coloring, facials, threading, and premium grooming services.",
+              image: "https://persiansaloon.com/og-image.jpg",
+              telephone: "+919371234444",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Near JJ Garden, Dastur Meher Road, Camp",
+                addressLocality: "Pune",
+                addressRegion: "Maharashtra",
+                postalCode: "411001",
+                addressCountry: "IN"
+              }
+            })
+          }}
+        />
       </Head>
 
       <Navbar />
